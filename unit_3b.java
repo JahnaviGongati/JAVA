@@ -1,0 +1,24 @@
+interface Father {
+    void show();
+}
+
+interface Mother {
+    void show();
+}
+
+class Child implements Father, Mother {
+    public void show() {
+        System.out.println("This is Father's method.");
+    }
+    public void showChild() {
+        System.out.println("This is Child's method.");
+    }
+}
+
+public class unit_3b {
+    public static void main(String[] args) {
+        Child c = new Child();
+        c.show();
+        c.showChild();
+    }
+}
